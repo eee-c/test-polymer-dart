@@ -1,0 +1,20 @@
+name: polymer_test_sampler
+dependencies:
+  polymer: any
+    # git: git@github.com:dart-lang/polymer-dart.git
+
+dev_dependencies:
+  test: any
+    # git: git@github.com:dart-lang/test.git
+
+# make sure that the test/pub_serve transformer comes after the
+# polymer transformer:
+transformers:
+- polymer:
+    entry_points:
+    - web/index.html
+    - test/simple_test.html
+# - test/pub_serve:
+#     $include: test/*_test.dart
+- test/pub_serve:
+    $include: test/**_test{.*,}.dart
