@@ -1,4 +1,3 @@
-@HtmlImport('x-child.html')
 library polymer_test_sampler.x_child;
 
 import 'package:polymer/polymer.dart';

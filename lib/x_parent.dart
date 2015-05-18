@@ -1,10 +1,7 @@
-@HtmlImport('x-parent.html')
 library polymer_test_sampler.x_parent;
 
 import 'package:polymer/polymer.dart';
 import 'dart:async';
-
-import 'x_child.dart';
 
 @CustomTag('x-parent')
 class XParent extends PolymerElement {
